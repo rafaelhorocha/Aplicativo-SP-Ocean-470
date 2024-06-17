@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
-import 'package:flutter/material.dart'; // For PNG icons (if using Image.asset)
+import 'package:flutter/material.dart';
+import 'package:flutter_application_sp470/description.dart'; // For PNG icons (if using Image.asset)
 
 void main() {
   runApp(const SPOceanApp());
@@ -44,11 +45,13 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
       body: Scrollbar(
         child: SingleChildScrollView(
           // Rest of your content goes here
+
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const SizedBox(height: 20),
               // Image with full width and fixed height
-              const SizedBox(width: 20),
+
               const Padding(
                 padding: EdgeInsets.fromLTRB(0, 0.0, 0.0, 0.0),
                 //padding: EdgeInsets.only(top: 20, left: 0, right: 140),
@@ -62,6 +65,29 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
                   textAlign: TextAlign.center, // Justify text alignment
                 ),
               ),
+              const SizedBox(height: 20),
+              const Padding(
+                padding: EdgeInsets.fromLTRB(0, 0.0, 260.0, 0.0),
+                child: Column(
+                  crossAxisAlignment:
+                      CrossAxisAlignment.start, // Alinha os filhos à esquerda
+                  children: <Widget>[
+                    SizedBox(width: 60),
+                    SizedBox(height: 25),
+                    // Espaço entre o AppBar e o texto "Atividades"
+                    // Espaço entre o AppBar e o texto "Atividades"
+                    Text(
+                      'Atividades',
+                      style: TextStyle(
+                        color: Color.fromRGBO(10, 116, 158, 1),
+                        fontSize: 24, // Tamanho da fonte do subtítulo
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    // Aqui você pode adicionar os widgets para as atividades conforme necessário.
+                  ],
+                ),
+              ),
               // Row for icon and text alignment
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -69,7 +95,7 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
                   const SizedBox(width: 20.0),
                   Column(
                     children: [
-                      const SizedBox(height: 10.0),
+                      const SizedBox(height: 30.0),
                       ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
@@ -77,12 +103,13 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
                               200, 240, 255, 1), // Set background color
                           foregroundColor: const Color.fromRGBO(
                               10, 116, 158, 1), // Set text color
-                          alignment: const Alignment(50, 50),
+                          alignment: const Alignment(100, 20),
                           elevation: 10, // Increase button elevation
 
-                          padding: const EdgeInsets.only(left: .0, right: .0),
+                          padding:
+                              const EdgeInsets.only(left: 0.0, right: 30.0),
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
+                            borderRadius: BorderRadius.circular(20),
                           ), // Add rounded corners
                           textStyle: const TextStyle(
                             fontSize: 20,
@@ -94,15 +121,15 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
                           children: [
                             Image.asset(
                               'assets/img/surf.png', // Replace with your image filename
-                              width: 150.0,
-                              height: 150.0,
+                              width: 130.0,
+                              height: 130.0,
                             ),
-                            const Text('Texto 1'),
+                            const Text('Surf'),
                             const SizedBox(height: 10.0),
                           ],
                         ),
                       ),
-                      const SizedBox(height: 10.0),
+                      const SizedBox(height: 30.0),
                       ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
@@ -128,18 +155,21 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/img/surf.png', // Replace with your image filename
+                              'assets/img/vela.png', // Replace with your image filename
                               width: 130.0,
                               height: 130.0,
                             ),
-                            const Text('Texto 1'),
+                            const Text('Passeios'),
                             const SizedBox(height: 10.0),
                           ],
                         ),
                       ),
-                      const SizedBox(height: 10.0),
+                      const SizedBox(height: 30.0),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => const DescriptionPage()));
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color.fromRGBO(
                               200, 240, 255, 1), // Set background color
@@ -163,21 +193,58 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/img/surf.png', // Replace with your image filename
+                              'assets/img/snor.png', // Replace with your image filename
                               width: 130.0,
                               height: 130.0,
                             ),
-                            const Text('Texto 1'),
+                            const Text('Snorkel'),
                             const SizedBox(height: 10.0),
                           ],
                         ),
                       ),
+                      const SizedBox(height: 30.0),
                     ],
                   ),
-                  const SizedBox(width: 20.0),
                   Column(
                     children: [
-                      const SizedBox(height: 10.0),
+                      const SizedBox(height: 30.0),
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => const DescriptionPage()));
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color.fromRGBO(
+                              200, 240, 255, 1), // Set background color
+                          foregroundColor: const Color.fromRGBO(
+                              10, 116, 158, 1), // Set text color
+                          alignment: const Alignment(100, 20),
+                          elevation: 10, // Increase button elevation
+
+                          padding:
+                              const EdgeInsets.only(left: 0.0, right: 30.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                          ), // Add rounded corners
+                          textStyle: const TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ), // Customize text style
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              'assets/img/asa.png', // Replace with your image filename
+                              width: 130.0,
+                              height: 130.0,
+                            ),
+                            const Text('Asa-delta'),
+                            const SizedBox(height: 10.0),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 30.0),
                       ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
@@ -203,16 +270,16 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/img/surf.png', // Replace with your image filename
+                              'assets/img/rapel.png', // Replace with your image filename
                               width: 130.0,
                               height: 130.0,
                             ),
-                            const Text('Texto 1'),
+                            const Text('Rapel'),
                             const SizedBox(height: 10.0),
                           ],
                         ),
                       ),
-                      const SizedBox(height: 10.0),
+                      const SizedBox(height: 30.0),
                       ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
@@ -238,53 +305,19 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/img/surf.png', // Replace with your image filename
+                              'assets/img/evento.png', // Replace with your image filename
                               width: 130.0,
                               height: 130.0,
                             ),
-                            const Text('Texto 1'),
+                            const Text('Eventos'),
                             const SizedBox(height: 10.0),
                           ],
                         ),
                       ),
-                      const SizedBox(height: 10.0),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromRGBO(
-                              200, 240, 255, 1), // Set background color
-                          foregroundColor: const Color.fromRGBO(
-                              10, 116, 158, 1), // Set text color
-                          alignment: const Alignment(100, 20),
-                          elevation: 10, // Increase button elevation
-
-                          padding:
-                              const EdgeInsets.only(left: 0.0, right: 30.0),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
-                          ), // Add rounded corners
-                          textStyle: const TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                          ), // Customize text style
-                        ),
-                        // Add margin here
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Image.asset(
-                              'assets/img/surf.png', // Replace with your image filename
-                              width: 130.0,
-                              height: 130.0,
-                            ),
-                            const Text('Texto 1'),
-                            const SizedBox(height: 10.0),
-                          ],
-                        ),
-                      ),
+                      const SizedBox(height: 30.0),
                     ],
                   ),
-                  const SizedBox(width: 20.0),
+                  const SizedBox(width: 30.0),
                 ],
               ),
 

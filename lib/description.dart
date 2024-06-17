@@ -12,20 +12,20 @@ class SPOceanApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: SPOceanHomePage(),
+      home: DescriptionPage(),
     );
   }
 }
 
-class SPOceanHomePage extends StatefulWidget {
-  const SPOceanHomePage({super.key});
+class DescriptionPage extends StatefulWidget {
+  const DescriptionPage({super.key});
 
   @override
   // ignore: library_private_types_in_public_api
   _SPOceanHomePageState createState() => _SPOceanHomePageState();
 }
 
-class _SPOceanHomePageState extends State<SPOceanHomePage> {
+class _SPOceanHomePageState extends State<DescriptionPage> {
   int _selectedIndex = 0;
 
   // Função para atualizar o índice selecionado na barra de navegação

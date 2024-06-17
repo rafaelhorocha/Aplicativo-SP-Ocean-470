@@ -67,6 +67,10 @@ flutter:
     - assets/img/snorkel1.png
     - assets/img/snor.png
     - assets/img/surf.png
+    - assets/img/evento.png
+    - assets/img/asa.png
+    - assets/img/rapel.png
+    - assets/img/vela.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
