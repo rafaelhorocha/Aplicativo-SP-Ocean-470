@@ -50,10 +50,10 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
               // Image with full width and fixed height
               const SizedBox(width: 20),
               const Padding(
-                padding: EdgeInsets.fromLTRB(0, 10.0, 0.0, 0.0),
+                padding: EdgeInsets.fromLTRB(0, 0.0, 0.0, 0.0),
                 //padding: EdgeInsets.only(top: 20, left: 0, right: 140),
                 child: Text(
-                  'SP Ocean',
+                  'SP OCEAN',
                   style: TextStyle(
                     color: Color(0xFF005374),
                     fontSize: 40,
@@ -66,142 +66,225 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+                  const SizedBox(width: 20.0),
                   Column(
                     children: [
                       const SizedBox(height: 10.0),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(10.0),
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color.fromRGBO(
+                              200, 240, 255, 1), // Set background color
+                          foregroundColor: const Color.fromRGBO(
+                              10, 116, 158, 1), // Set text color
+                          alignment: const Alignment(50, 50),
+                          elevation: 10, // Increase button elevation
+
+                          padding: const EdgeInsets.only(left: .0, right: .0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ), // Add rounded corners
+                          textStyle: const TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ), // Customize text style
                         ),
-                        padding: const EdgeInsets.all(10.0), // Add padding
-                        margin: const EdgeInsets.fromLTRB(60, 10.0, 0.0, 0.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/img/snor.png', // Replace with your image filename
+                              'assets/img/surf.png', // Replace with your image filename
                               width: 150.0,
                               height: 150.0,
                             ),
+                            const Text('Texto 1'),
+                            const SizedBox(height: 10.0),
                           ],
                         ),
                       ),
                       const SizedBox(height: 10.0),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(10.0),
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color.fromRGBO(
+                              200, 240, 255, 1), // Set background color
+                          foregroundColor: const Color.fromRGBO(
+                              10, 116, 158, 1), // Set text color
+                          alignment: const Alignment(100, 20),
+                          elevation: 10, // Increase button elevation
+
+                          padding:
+                              const EdgeInsets.only(left: 0.0, right: 30.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                          ), // Add rounded corners
+                          textStyle: const TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ), // Customize text style
                         ),
-                        padding: const EdgeInsets.all(10.0), // Add padding
-                        margin: const EdgeInsets.fromLTRB(60, 10.0, 0.0, 0.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        // Add margin here
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/img/snor.png', // Replace with your image filename
-                              width: 150.0,
-                              height: 150.0,
+                              'assets/img/surf.png', // Replace with your image filename
+                              width: 130.0,
+                              height: 130.0,
                             ),
+                            const Text('Texto 1'),
+                            const SizedBox(height: 10.0),
                           ],
                         ),
                       ),
                       const SizedBox(height: 10.0),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(10.0),
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color.fromRGBO(
+                              200, 240, 255, 1), // Set background color
+                          foregroundColor: const Color.fromRGBO(
+                              10, 116, 158, 1), // Set text color
+                          alignment: const Alignment(100, 20),
+                          elevation: 10, // Increase button elevation
+
+                          padding:
+                              const EdgeInsets.only(left: 0.0, right: 30.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                          ), // Add rounded corners
+                          textStyle: const TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ), // Customize text style
                         ),
-                        padding: const EdgeInsets.all(10.0), // Add padding
-                        margin: const EdgeInsets.fromLTRB(60, 10.0, 0.0, 0.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        // Add margin here
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/img/snor.png', // Replace with your image filename
-                              width: 150.0,
-                              height: 150.0,
+                              'assets/img/surf.png', // Replace with your image filename
+                              width: 130.0,
+                              height: 130.0,
                             ),
-                            /*const Text(
-                              'Texto',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 16.0,
-                              ),
-                            ),*/
+                            const Text('Texto 1'),
+                            const SizedBox(height: 10.0),
                           ],
                         ),
                       ),
                     ],
                   ),
+                  const SizedBox(width: 20.0),
                   Column(
                     children: [
                       const SizedBox(height: 10.0),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(10.0),
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color.fromRGBO(
+                              200, 240, 255, 1), // Set background color
+                          foregroundColor: const Color.fromRGBO(
+                              10, 116, 158, 1), // Set text color
+                          alignment: const Alignment(100, 20),
+                          elevation: 10, // Increase button elevation
+
+                          padding:
+                              const EdgeInsets.only(left: 0.0, right: 30.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                          ), // Add rounded corners
+                          textStyle: const TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ), // Customize text style
                         ),
-                        padding: const EdgeInsets.all(10.0), // Add padding
-                        margin: const EdgeInsets.fromLTRB(0, 10.0, 60.0, 0.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        // Add margin here
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/img/snor.png', // Replace with your image filename
-                              width: 150.0,
-                              height: 150.0,
+                              'assets/img/surf.png', // Replace with your image filename
+                              width: 130.0,
+                              height: 130.0,
                             ),
+                            const Text('Texto 1'),
+                            const SizedBox(height: 10.0),
                           ],
                         ),
                       ),
                       const SizedBox(height: 10.0),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(10.0),
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color.fromRGBO(
+                              200, 240, 255, 1), // Set background color
+                          foregroundColor: const Color.fromRGBO(
+                              10, 116, 158, 1), // Set text color
+                          alignment: const Alignment(100, 20),
+                          elevation: 10, // Increase button elevation
+
+                          padding:
+                              const EdgeInsets.only(left: 0.0, right: 30.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                          ), // Add rounded corners
+                          textStyle: const TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ), // Customize text style
                         ),
-                        padding: const EdgeInsets.all(10.0), // Add padding
-                        margin: const EdgeInsets.fromLTRB(0, 10.0, 60.0, 0.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        // Add margin here
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/img/snor.png', // Replace with your image filename
-                              width: 150.0,
-                              height: 150.0,
+                              'assets/img/surf.png', // Replace with your image filename
+                              width: 130.0,
+                              height: 130.0,
                             ),
+                            const Text('Texto 1'),
+                            const SizedBox(height: 10.0),
                           ],
                         ),
                       ),
                       const SizedBox(height: 10.0),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(10.0),
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color.fromRGBO(
+                              200, 240, 255, 1), // Set background color
+                          foregroundColor: const Color.fromRGBO(
+                              10, 116, 158, 1), // Set text color
+                          alignment: const Alignment(100, 20),
+                          elevation: 10, // Increase button elevation
+
+                          padding:
+                              const EdgeInsets.only(left: 0.0, right: 30.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                          ), // Add rounded corners
+                          textStyle: const TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ), // Customize text style
                         ),
-                        padding: const EdgeInsets.all(10.0), // Add padding
-                        margin: const EdgeInsets.fromLTRB(0, 10.0, 60.0, 0.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        // Add margin here
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/img/snor.png', // Replace with your image filename
-                              width: 150.0,
-                              height: 150.0,
+                              'assets/img/surf.png', // Replace with your image filename
+                              width: 130.0,
+                              height: 130.0,
                             ),
-                            /*const Text(
-                              'Texto',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 16.0,
-                              ),
-                            ),*/
+                            const Text('Texto 1'),
+                            const SizedBox(height: 10.0),
                           ],
                         ),
                       ),
                     ],
                   ),
+                  const SizedBox(width: 20.0),
                 ],
               ),
 
