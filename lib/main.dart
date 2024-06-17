@@ -1,102 +1,3 @@
-/* import 'package:flutter/material.dart';
-
-void main() {
-  runApp(const SPOceanApp());
-}
-
-class SPOceanApp extends StatelessWidget {
-  const SPOceanApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: SPOceanHomePage(),
-    );
-  }
-}
-
-class SPOceanHomePage extends StatefulWidget {
-  const SPOceanHomePage({super.key});
-
-  @override
-  // ignore: library_private_types_in_public_api
-  _SPOceanHomePageState createState() => _SPOceanHomePageState();
-}
-
-class _SPOceanHomePageState extends State<SPOceanHomePage> {
-  int _selectedIndex = 0;
-
-  // Função para atualizar o índice selecionado na barra de navegação
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      // Cor de fundo da tela
-      backgroundColor: const Color(0xFFE9F9FF),
-      appBar: AppBar(
-        // Centraliza o título no AppBar
-        centerTitle: true,
-        title: const Text(
-          'SP OCEAN',
-          style: TextStyle(
-            color: Color(0xFF005374),
-            fontSize: 40,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        backgroundColor: Colors.transparent, // Remove o fundo do AppBar
-      ),
-
-      body: const Padding(
-        padding: EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment:
-              CrossAxisAlignment.start, // Alinha os filhos à esquerda
-          children: <Widget>[
-            SizedBox(
-                height: 24), // Espaço entre o AppBar e o texto "Atividades"
-            Text(
-              'Atividades',
-              style: TextStyle(
-                color: Color(0xFF005374),
-                fontSize: 24, // Tamanho da fonte do subtítulo
-              ),
-            ),
-            // Aqui você pode adicionar os widgets para as atividades conforme necessário.
-          ],
-        ),
-      ),
-
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.send),
-            label: 'Atividades',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.camera_alt),
-            label: 'Publicações',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.white70,
-        backgroundColor:
-            const Color(0xFF005374), // Cor de fundo do BottomNavigationBar
-        onTap: _onItemTapped,
-      ),
-    );
-  }
-}*/
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart'; // For PNG icons (if using Image.asset)
@@ -147,87 +48,168 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // Image with full width and fixed height
-              Image.asset(
-                'assets/img/snorkels.png',
-                width: double.infinity, // Occupy full width
-                height: 300, // Fixed height
-                fit: BoxFit.cover, // Adjust fit as needed
+              const SizedBox(width: 20),
+              const Padding(
+                padding: EdgeInsets.fromLTRB(0, 10.0, 0.0, 0.0),
+                //padding: EdgeInsets.only(top: 20, left: 0, right: 140),
+                child: Text(
+                  'SP Ocean',
+                  style: TextStyle(
+                    color: Color(0xFF005374),
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center, // Justify text alignment
+                ),
               ),
-
               // Row for icon and text alignment
               Row(
-                mainAxisAlignment:
-                    MainAxisAlignment.center, // Center the content
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  // Replace icon with image
-                  // Choose the desired icon
-                  const SizedBox(width: 10), // Add some horizontal spacing
-
-                  const Text(
-                    'Snorkel',
-                    style: TextStyle(
-                      color: Color(0xFF005374),
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
-                    ),
+                  Column(
+                    children: [
+                      const SizedBox(height: 10.0),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        padding: const EdgeInsets.all(10.0), // Add padding
+                        margin: const EdgeInsets.fromLTRB(60, 10.0, 0.0, 0.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Image.asset(
+                              'assets/img/snor.png', // Replace with your image filename
+                              width: 150.0,
+                              height: 150.0,
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 10.0),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        padding: const EdgeInsets.all(10.0), // Add padding
+                        margin: const EdgeInsets.fromLTRB(60, 10.0, 0.0, 0.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Image.asset(
+                              'assets/img/snor.png', // Replace with your image filename
+                              width: 150.0,
+                              height: 150.0,
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 10.0),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        padding: const EdgeInsets.all(10.0), // Add padding
+                        margin: const EdgeInsets.fromLTRB(60, 10.0, 0.0, 0.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Image.asset(
+                              'assets/img/snor.png', // Replace with your image filename
+                              width: 150.0,
+                              height: 150.0,
+                            ),
+                            /*const Text(
+                              'Texto',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16.0,
+                              ),
+                            ),*/
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
-                  Image.asset(
-                    'assets/img/icons.png', // Replace with your image filename
-                    width: 80.0, // Adjust image width as desired
-                    height: 80.0, // Adjust image height as desired
+                  Column(
+                    children: [
+                      const SizedBox(height: 10.0),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        padding: const EdgeInsets.all(10.0), // Add padding
+                        margin: const EdgeInsets.fromLTRB(0, 10.0, 60.0, 0.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Image.asset(
+                              'assets/img/snor.png', // Replace with your image filename
+                              width: 150.0,
+                              height: 150.0,
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 10.0),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        padding: const EdgeInsets.all(10.0), // Add padding
+                        margin: const EdgeInsets.fromLTRB(0, 10.0, 60.0, 0.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Image.asset(
+                              'assets/img/snor.png', // Replace with your image filename
+                              width: 150.0,
+                              height: 150.0,
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 10.0),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        padding: const EdgeInsets.all(10.0), // Add padding
+                        margin: const EdgeInsets.fromLTRB(0, 10.0, 60.0, 0.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Image.asset(
+                              'assets/img/snor.png', // Replace with your image filename
+                              width: 150.0,
+                              height: 150.0,
+                            ),
+                            /*const Text(
+                              'Texto',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16.0,
+                              ),
+                            ),*/
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
-                  const SizedBox(
-                    height: 20,
-                  ), // Espaço entre o AppBar e o texto "Atividades"
                 ],
               ),
 
-              const Padding(
-                padding: EdgeInsets.only(top: 0, left: 25, right: 25.0),
-                child: Text(
-                  'Mergulho com snorkel é nadar perto da superfície da água usando um tubo chamado snorkel para respirar. Você pode ver embaixo d\'água sem precisar segurar a respiração.',
-                  style: TextStyle(
-                    color: Color.fromRGBO(10, 116, 158, 1),
-                    fontSize: 18,
-                  ),
-                  textAlign: TextAlign.justify, // Justify text alignment
-                ),
-              ),
-              const Padding(
-                padding: EdgeInsets.only(top: 20, left: 0, right: 140),
-                child: Text(
-                  'Praias com essa atividade:',
-                  style: TextStyle(
-                    color: Color(0xFF005374),
-                    fontSize: 23,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  textAlign: TextAlign.left, // Justify text alignment
-                ),
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              const Padding(
-                padding: EdgeInsets.only(top: 0, left: 25, right: 25.0),
-                child: Text(
-                  'Mergulho com snorkel é nadar perto da superfície da água usando um tubo chamado snorkel para respirar. Você pode ver embaixo d\'água sem precisar segurar a respiração.',
-                  style: TextStyle(
-                    color: Color.fromRGBO(10, 116, 158, 1),
-                    fontSize: 18,
-                  ),
-                  textAlign: TextAlign.justify, // Justify text alignment
-                ),
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              // ... Add more content here if needed for scrolling
+              // Three stacked containers
             ],
           ),
         ),
       ),
-
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
