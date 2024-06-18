@@ -8,8 +8,6 @@
 
 <h3>lista de tópicos da WIKI: </h3>
 
-<a href="https://github.com/rafaelhorocha/Aplicativo-SP-Ocean-470.wiki.git">WIKI projeto SP OCEAN</a>
-
 <a href="https://github.com/rafaelhorocha/Aplicativo-SP-Ocean-470/wiki/Descri%C3%A7%C3%A3o-da-aplica%C3%A7%C3%A3o">Descrição da aplicação</a>
 
 <a href="https://github.com/rafaelhorocha/Aplicativo-SP-Ocean-470/wiki/descri%C3%A7%C3%A3o-do-desenvolvimento-das-telas">Descrição de desenvolvimento das telas</a>
