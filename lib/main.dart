@@ -40,18 +40,12 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(233, 249, 255, 1),
-
-      // Wrap the body with Scrollbar
       body: Scrollbar(
         child: SingleChildScrollView(
-          // Rest of your content goes here
-
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(height: 20),
-              // Image with full width and fixed height
-
               const Padding(
                 padding: EdgeInsets.fromLTRB(0, 0.0, 0.0, 0.0),
                 //padding: EdgeInsets.only(top: 20, left: 0, right: 140),
@@ -62,7 +56,7 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
                   ),
-                  textAlign: TextAlign.center, // Justify text alignment
+                  textAlign: TextAlign.center,
                 ),
               ),
               const SizedBox(height: 20),
@@ -88,7 +82,6 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
                   ],
                 ),
               ),
-              // Row for icon and text alignment
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -99,28 +92,27 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
                       ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromRGBO(
-                              200, 240, 255, 1), // Set background color
-                          foregroundColor: const Color.fromRGBO(
-                              10, 116, 158, 1), // Set text color
+                          backgroundColor:
+                              const Color.fromRGBO(200, 240, 255, 1),
+                          foregroundColor:
+                              const Color.fromRGBO(10, 116, 158, 1),
                           alignment: const Alignment(100, 20),
-                          elevation: 10, // Increase button elevation
-
+                          elevation: 10,
                           padding:
                               const EdgeInsets.only(left: 0.0, right: 30.0),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
-                          ), // Add rounded corners
+                          ),
                           textStyle: const TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                          ), // Customize text style
+                          ),
                         ),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/img/surf.png', // Replace with your image filename
+                              'assets/img/surf.png',
                               width: 130.0,
                               height: 130.0,
                             ),
@@ -133,29 +125,27 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
                       ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromRGBO(
-                              200, 240, 255, 1), // Set background color
-                          foregroundColor: const Color.fromRGBO(
-                              10, 116, 158, 1), // Set text color
+                          backgroundColor:
+                              const Color.fromRGBO(200, 240, 255, 1),
+                          foregroundColor:
+                              const Color.fromRGBO(10, 116, 158, 1),
                           alignment: const Alignment(100, 20),
-                          elevation: 10, // Increase button elevation
-
+                          elevation: 10,
                           padding:
                               const EdgeInsets.only(left: 0.0, right: 30.0),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
-                          ), // Add rounded corners
+                          ),
                           textStyle: const TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                          ), // Customize text style
+                          ),
                         ),
-                        // Add margin here
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/img/vela.png', // Replace with your image filename
+                              'assets/img/vela.png',
                               width: 130.0,
                               height: 130.0,
                             ),
@@ -171,29 +161,27 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
                               builder: (context) => const DescriptionPage()));
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromRGBO(
-                              200, 240, 255, 1), // Set background color
-                          foregroundColor: const Color.fromRGBO(
-                              10, 116, 158, 1), // Set text color
+                          backgroundColor:
+                              const Color.fromRGBO(200, 240, 255, 1),
+                          foregroundColor:
+                              const Color.fromRGBO(10, 116, 158, 1),
                           alignment: const Alignment(100, 20),
-                          elevation: 10, // Increase button elevation
-
+                          elevation: 10,
                           padding:
                               const EdgeInsets.only(left: 0.0, right: 30.0),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
-                          ), // Add rounded corners
+                          ),
                           textStyle: const TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                          ), // Customize text style
+                          ),
                         ),
-                        // Add margin here
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/img/snor.png', // Replace with your image filename
+                              'assets/img/snor.png',
                               width: 130.0,
                               height: 130.0,
                             ),
@@ -209,33 +197,29 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
                     children: [
                       const SizedBox(height: 30.0),
                       ElevatedButton(
-                        onPressed: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => const DescriptionPage()));
-                        },
+                        onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromRGBO(
-                              200, 240, 255, 1), // Set background color
-                          foregroundColor: const Color.fromRGBO(
-                              10, 116, 158, 1), // Set text color
+                          backgroundColor:
+                              const Color.fromRGBO(200, 240, 255, 1),
+                          foregroundColor:
+                              const Color.fromRGBO(10, 116, 158, 1),
                           alignment: const Alignment(100, 20),
-                          elevation: 10, // Increase button elevation
-
+                          elevation: 10,
                           padding:
                               const EdgeInsets.only(left: 0.0, right: 30.0),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
-                          ), // Add rounded corners
+                          ),
                           textStyle: const TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                          ), // Customize text style
+                          ),
                         ),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/img/asa.png', // Replace with your image filename
+                              'assets/img/asa.png',
                               width: 130.0,
                               height: 130.0,
                             ),
@@ -248,29 +232,27 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
                       ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromRGBO(
-                              200, 240, 255, 1), // Set background color
-                          foregroundColor: const Color.fromRGBO(
-                              10, 116, 158, 1), // Set text color
+                          backgroundColor:
+                              const Color.fromRGBO(200, 240, 255, 1),
+                          foregroundColor:
+                              const Color.fromRGBO(10, 116, 158, 1),
                           alignment: const Alignment(100, 20),
-                          elevation: 10, // Increase button elevation
-
+                          elevation: 10,
                           padding:
                               const EdgeInsets.only(left: 0.0, right: 30.0),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
-                          ), // Add rounded corners
+                          ),
                           textStyle: const TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                          ), // Customize text style
+                          ),
                         ),
-                        // Add margin here
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/img/rapel.png', // Replace with your image filename
+                              'assets/img/rapel.png',
                               width: 130.0,
                               height: 130.0,
                             ),
@@ -283,29 +265,27 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
                       ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromRGBO(
-                              200, 240, 255, 1), // Set background color
-                          foregroundColor: const Color.fromRGBO(
-                              10, 116, 158, 1), // Set text color
+                          backgroundColor:
+                              const Color.fromRGBO(200, 240, 255, 1),
+                          foregroundColor:
+                              const Color.fromRGBO(10, 116, 158, 1),
                           alignment: const Alignment(100, 20),
-                          elevation: 10, // Increase button elevation
-
+                          elevation: 10,
                           padding:
                               const EdgeInsets.only(left: 0.0, right: 30.0),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
-                          ), // Add rounded corners
+                          ),
                           textStyle: const TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                          ), // Customize text style
+                          ),
                         ),
-                        // Add margin here
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/img/evento.png', // Replace with your image filename
+                              'assets/img/evento.png',
                               width: 130.0,
                               height: 130.0,
                             ),
@@ -320,8 +300,6 @@ class _SPOceanHomePageState extends State<SPOceanHomePage> {
                   const SizedBox(width: 30.0),
                 ],
               ),
-
-              // Three stacked containers
             ],
           ),
         ),

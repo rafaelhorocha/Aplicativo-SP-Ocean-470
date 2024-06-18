@@ -39,30 +39,21 @@ class _SPOceanHomePageState extends State<DescriptionPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(233, 249, 255, 1),
-
-      // Wrap the body with Scrollbar
       body: Scrollbar(
         child: SingleChildScrollView(
-          // Rest of your content goes here
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // Image with full width and fixed height
               Image.asset(
                 'assets/img/snorkels.png',
-                width: double.infinity, // Occupy full width
-                height: 300, // Fixed height
-                fit: BoxFit.cover, // Adjust fit as needed
+                width: double.infinity,
+                height: 300,
+                fit: BoxFit.cover,
               ),
-
-              // Row for icon and text alignment
               Row(
-                mainAxisAlignment:
-                    MainAxisAlignment.center, // Center the content
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // Replace icon with image
-                  // Choose the desired icon
-                  const SizedBox(width: 10), // Add some horizontal spacing
+                  const SizedBox(width: 10),
 
                   const Text(
                     'Snorkel',
@@ -73,16 +64,15 @@ class _SPOceanHomePageState extends State<DescriptionPage> {
                     ),
                   ),
                   Image.asset(
-                    'assets/img/icons.png', // Replace with your image filename
-                    width: 80.0, // Adjust image width as desired
-                    height: 80.0, // Adjust image height as desired
+                    'assets/img/icons.png',
+                    width: 80.0,
+                    height: 80.0,
                   ),
                   const SizedBox(
                     height: 20,
                   ), // Espaço entre o AppBar e o texto "Atividades"
                 ],
               ),
-
               const Padding(
                 padding: EdgeInsets.only(top: 0, left: 25, right: 25.0),
                 child: Text(
@@ -91,7 +81,7 @@ class _SPOceanHomePageState extends State<DescriptionPage> {
                     color: Color.fromRGBO(10, 116, 158, 1),
                     fontSize: 18,
                   ),
-                  textAlign: TextAlign.justify, // Justify text alignment
+                  textAlign: TextAlign.justify,
                 ),
               ),
               const SizedBox(
@@ -107,15 +97,12 @@ class _SPOceanHomePageState extends State<DescriptionPage> {
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
                   ),
-                  textAlign: TextAlign.left, // Justify text alignment
+                  textAlign: TextAlign.left,
                 ),
               ),
               const SizedBox(
                 height: 20,
               ),
-
-              // Three stacked containers
-
               Column(
                 children: [
                   Container(
@@ -123,17 +110,14 @@ class _SPOceanHomePageState extends State<DescriptionPage> {
                       color: const Color.fromARGB(255, 197, 237, 252),
                       borderRadius: BorderRadius.circular(50.0),
                     ),
-                    padding: const EdgeInsets.all(10.0), // Add padding
-                    margin: const EdgeInsets.fromLTRB(
-                        30, 10.0, 260.0, 0.0), // Add margin
-
+                    padding: const EdgeInsets.all(10.0),
+                    margin: const EdgeInsets.fromLTRB(30, 10.0, 260.0, 0.0),
                     child: Row(
                       children: [
-                        // Replace with your desired image
                         Image.asset(
-                          'assets/img/sol.png', // Replace with your image filename
-                          width: 30.0, // Adjust image width as desired
-                          height: 30.0, // Adjust image height as desired
+                          'assets/img/sol.png',
+                          width: 30.0,
+                          height: 30.0,
                         ),
                         const SizedBox(height: 0.0),
                         const Text(
@@ -152,17 +136,14 @@ class _SPOceanHomePageState extends State<DescriptionPage> {
                       color: const Color.fromARGB(255, 197, 237, 252),
                       borderRadius: BorderRadius.circular(50.0),
                     ),
-                    padding: const EdgeInsets.all(10.0), // Add padding
-                    margin: const EdgeInsets.fromLTRB(
-                        30, 10.0, 260.0, 0.0), // Add margin
-
+                    padding: const EdgeInsets.all(10.0),
+                    margin: const EdgeInsets.fromLTRB(30, 10.0, 260.0, 0.0),
                     child: Row(
                       children: [
-                        // Replace with your desired image
                         Image.asset(
-                          'assets/img/sol.png', // Replace with your image filename
-                          width: 30.0, // Adjust image width as desired
-                          height: 30.0, // Adjust image height as desired
+                          'assets/img/sol.png',
+                          width: 30.0,
+                          height: 30.0,
                         ),
                         const SizedBox(height: 10.0),
                         const Text(
@@ -181,17 +162,14 @@ class _SPOceanHomePageState extends State<DescriptionPage> {
                       color: const Color.fromARGB(255, 197, 237, 252),
                       borderRadius: BorderRadius.circular(50.0),
                     ),
-                    padding: const EdgeInsets.all(10.0), // Add padding
-                    margin: const EdgeInsets.fromLTRB(
-                        30, 10.0, 260.0, 0.0), // Add margin
-
+                    padding: const EdgeInsets.all(10.0),
+                    margin: const EdgeInsets.fromLTRB(30, 10.0, 260.0, 0.0),
                     child: Row(
                       children: [
-                        // Replace with your desired image
                         Image.asset(
-                          'assets/img/sol.png', // Replace with your image filename
-                          width: 30.0, // Adjust image width as desired
-                          height: 30.0, // Adjust image height as desired
+                          'assets/img/sol.png',
+                          width: 30.0,
+                          height: 30.0,
                         ),
                         const SizedBox(height: 0.0),
                         const Text(
